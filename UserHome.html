@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="College bus tracking home page">
+    <title>BusTrack | Home</title>
+    <link rel="stylesheet" href="UserHomeStyle.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navigation" aria-label="Primary navigation">
+            <a class="brand" href="UserHome.html">College Transport Information Portal</a>
+            <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-links">&#9776;</button>
+            <div class="nav-links" id="primary-links">
+                <a class="nav-link is-active" href="#home" data-panel="0">Home</a>
+                <a class="nav-link" href="#your-bus">Your Bus</a>
+                <a class="nav-link" href="#buses-routes">Buses / Routes</a>
+                <a class="nav-link profile-link account-link" id="account-link" href="#profile">Profile</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="content-track" id="content-track">
+            <section class="content-panel is-active" id="home" aria-labelledby="home-title">
+                <h1 id="home-title">Welcome to College Transport Information Portal</h1>
+                <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="Assets/College Bus Image.png" style="width:100%">
+                    <div class="text">Caption Text</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="Assets/College Image.jpg" style="width:100%">
+                    <div class="text">Caption Two</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="Assets/College Class.png" style="width:100%">
+                    <div class="text">Caption Three</div>
+                </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+                <div class="college-info">
+                    <h2>1. Introduction to College</h2>
+                    <p>A college is an educational institution that provides higher education and helps students develop academic knowledge, practical skills, and professional abilities. It offers various undergraduate and postgraduate courses in different fields, such as arts, science, commerce, computer applications, and management. Colleges provide classrooms, laboratories, libraries, computer facilities, and other learning resources. They also encourage students to participate in seminars, workshops, cultural activities, sports, and other events that support their overall development.</p>
+
+                    <h2>2. Importance of College Education</h2>
+                    <p>College education plays an important role in shaping a student's future career and personality. It provides opportunities to learn advanced subjects, improve communication skills, and develop critical thinking and problem-solving abilities. Students interact with teachers and classmates, which helps them build teamwork, confidence, and leadership qualities. Colleges also guide students in choosing suitable career paths and preparing for employment. Through education and extracurricular activities, students become more responsible and capable members of society.</p>
+
+                    <h2>3. College Facilities and Activities</h2>
+                    <p>A college provides several facilities to support effective learning and student development. These facilities may include well-equipped classrooms, laboratories, libraries, computer centers, seminar halls, sports grounds, and canteens. Teachers conduct lectures, practical sessions, examinations, and other academic activities to improve students' knowledge. Colleges also organize cultural programs, technical events, workshops, and educational tours. These activities help students discover their talents, gain practical experience, and develop important skills for their personal and professional lives.</p>
+
+                    <h2>4. Need for College Transport</h2>
+                    <p>College transport is an important service that helps students and staff travel safely between their homes and the college campus. Many students live far away from their educational institution and may face difficulties using public transportation every day. College buses provide a convenient and organized transportation facility for these students. They reduce travel difficulties, support regular attendance, and help students reach college on time. A reliable transport service also provides comfort and convenience during daily travel.</p>
+
+                    <h2>5. College Transport System</h2>
+                    <p>A college transport system is an organized service that manages buses used for transporting students, teaching staff, and non-teaching staff. The system includes buses, drivers, routes, bus stops, schedules, and transport administrators. Each bus operates according to a planned route and timetable. Students can use the assigned bus to travel between their homes and the college. Proper management of the transport system helps reduce confusion, improve punctuality, and ensure that transportation services operate efficiently.</p>
+
+                    <h2>6. Importance of Bus Tracking</h2>
+                    <p>A bus tracking system helps students and college administrators know the current location of college buses. Using GPS technology, the system can collect the location of a bus and display it on a digital map. Students can check whether their bus is approaching a particular stop or is delayed. This information reduces unnecessary waiting time and improves travel planning. Bus tracking also helps administrators monitor routes, identify delays, and coordinate transportation services more effectively.</p>
+
+                    <h2>7. Benefits of a College Transport System</h2>
+                    <p>A well-managed college transport system provides many benefits to students, staff, and college management. It improves transportation convenience, supports regular attendance, and helps students arrive at the campus safely and on time. The system can also reduce uncertainty about bus arrival times and provide useful route information. College administrators can monitor bus operations, manage schedules, and respond to transportation problems. Overall, an efficient transport system contributes to better time management and a more organized college environment.</p>
+
+                    <h2>8. Conclusion</h2>
+                    <p>The college and its transport system are important parts of a student's educational experience. College provides knowledge, skills, facilities, and opportunities for personal development, while college transport helps students travel conveniently between their homes and the campus. A modern college transport system with GPS tracking can improve communication, punctuality, and transportation management. By combining quality education with reliable transport services, colleges can create a safer, more comfortable, and efficient learning environment for students and staff.</p>
+                </div>
+            </section>
+
+            <section class="content-panel" id="your-bus" aria-labelledby="your-bus-title">
+                <h2 id="your-bus-title">Your Bus</h2>
+                <p id="your-bus-message">Select a bus from Buses / Routes to save it here.</p>
+                <div class="info-grid" id="your-bus-details"><div class="info-item"><strong>Assigned bus</strong><span>Not assigned</span></div></div>
+            </section>
+
+            <section class="content-panel" id="buses-routes" aria-labelledby="routes-title">
+                <h2 id="routes-title">Buses / Routes</h2>
+                <p>Search buses and routes shared by drivers.</p>
+                <label class="search-label" for="route-search">Search bus or route</label>
+                <input class="route-search" id="route-search" type="search" placeholder="Search by bus number, stop, or driver">
+                <div class="route-results" id="route-results"></div>
+            </section>
+
+            <section class="content-panel" id="profile" aria-labelledby="profile-title">
+                <h2 id="profile-title">Your Profile</h2>
+                <p id="profile-message">Your registered details are shown below.</p>
+                <div class="info-grid">
+                    <div class="info-item"><strong>Full name</strong><span id="profile-name">Not available</span></div>
+                    <div class="info-item"><strong>Email</strong><span id="profile-email">Not available</span></div>
+                    <div class="info-item"><strong>ID</strong><span id="profile-id">Not available</span></div>
+                    <div class="info-item"><strong>Account type</strong><span>User</span></div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="script.js">
+    </script>
+</body>
+</html>
